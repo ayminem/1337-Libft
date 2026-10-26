@@ -6,7 +6,7 @@
 /*   By: aymissao <aymissao@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 19:32:57 by aymissao          #+#    #+#             */
-/*   Updated: 2026/10/24 22:39:32 by aymissao         ###   ########.fr       */
+/*   Updated: 2026/10/26 22:18:34 by aymissao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		ft_lstdelone(*lst, del);
 		*lst = tmp;
 	}
+	*lst = NULL;
 }
 
 /* #include <stdio.h>
